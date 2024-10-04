@@ -50,6 +50,8 @@ Users should be able to:
 
 ### Useful resources
 
+-[A (more) Modern CSS Reset](https://piccalil.li/blog/a-more-modern-css-reset/)
+
 ## Author
 
 - Website - [Richard Cyrus](https://www.richardcyrus.com)
