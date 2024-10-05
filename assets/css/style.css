@@ -218,10 +218,6 @@ textarea:not([rows]) {
   color: hsl(var(--color-purple-500));
 }
 
-.text-italic {
-  font-style: italic;
-}
-
 .bg-white {
   background-color: white;
 }
