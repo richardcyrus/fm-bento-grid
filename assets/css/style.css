@@ -140,7 +140,7 @@ textarea:not([rows]) {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1120px) {
   :root {
     --text-preset-1: normal 500 3.875rem/93.5% "DM Sans", sans-serif;
     --text-preset-2: normal 500 2.5rem/90% "DM Sans", sans-serif;
@@ -184,7 +184,7 @@ textarea:not([rows]) {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1120px) {
   .text-preset-1 {
     letter-spacing: -0.1875rem;
   }
@@ -262,6 +262,23 @@ body {
   }
 }
 
+@media screen and (min-width: 1184px) {
+  .bento-grid {
+    grid-template-areas:
+      "create stars stars schedule"
+      "create multiple consistent schedule"
+      "ai-content multiple consistent schedule"
+      "ai-content audience grow grow";
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: 1fr 4rem repeat(2, 1fr);
+    margin-block-end: unset;
+    margin-block-start: 5.1875rem;
+    margin-inline: auto;
+    max-height: 55.0625rem;
+    width: 70rem;
+  }
+}
+
 .bento-item {
   align-self: stretch;
   border-radius: 10px;
@@ -276,6 +293,14 @@ body {
   text-align: center;
 }
 
+.five-stars img {
+  margin-block-start: var(--spacing-300);
+}
+
+.five-stars p:last-of-type {
+  margin-block-start: var(--spacing-100);
+}
+
 @media screen and (min-width: 768px) {
   .five-stars {
     grid-column: span 2;
@@ -288,17 +313,19 @@ body {
   }
 }
 
-.five-stars img {
-  margin-block-start: var(--spacing-300);
-}
-
-.five-stars p:last-of-type {
-  margin-block-start: var(--spacing-100);
+@media screen and (min-width: 1184px) {
+  .five-stars {
+    grid-area: stars;
+  }
 }
 
 .multiple-platforms,
 .consistent-schedule {
   padding: var(--spacing-200);
+}
+
+.multiple-platforms p {
+  margin-block-start: var(--spacing-200);
 }
 
 @media screen and (min-width: 768px) {
@@ -308,7 +335,11 @@ body {
     min-height: 15.4375rem;
     overflow-x: hidden;
     padding: var(--spacing-300) 0 var(--spacing-300) var(--spacing-300);
-    /* width: 20.5rem; */
+  }
+
+  .multiple-platforms img {
+    object-fit: cover;
+    object-position: left;
   }
 
   .multiple-platforms p {
@@ -316,8 +347,14 @@ body {
   }
 }
 
-.multiple-platforms p {
-  margin-block-start: var(--spacing-200);
+@media screen and (min-width: 1184px) {
+  .multiple-platforms {
+    grid-area: multiple;
+  }
+
+  .multiple-platforms p {
+    width: 9ch;
+  }
 }
 
 .consistent-schedule {
@@ -331,6 +368,12 @@ body {
   .consistent-schedule {
     min-height: 15.4375rem;
     padding: var(--spacing-300) var(--spacing-300) 0 var(--spacing-300);
+  }
+}
+
+@media screen and (min-width: 1184px) {
+  .consistent-schedule {
+    grid-area: consistent;
   }
 }
 
@@ -353,6 +396,32 @@ body {
   }
   .schedule-posts p {
     width: 28ch;
+  }
+}
+
+@media screen and (min-width: 1184px) {
+  .schedule-posts {
+    align-items: flex-start;
+    gap: var(--spacing-300);
+    grid-area: schedule;
+    padding: var(--spacing-400) 0 var(--spacing-400) var(--spacing-400);
+  }
+
+  .schedule-posts p {
+    text-align: left;
+  }
+
+  .schedule-posts img {
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .schedule-posts p:first-of-type {
+    width: 10ch;
+  }
+
+  .schedule-posts p:last-of-type {
+    width: 15ch;
   }
 }
 
@@ -379,6 +448,17 @@ body {
   }
 }
 
+@media screen and (min-width: 1184px) {
+  .grow-followers {
+    gap: var(--spacing-200);
+    grid-area: grow;
+  }
+
+  .grow-followers p {
+    width: 16ch;
+  }
+}
+
 .audience-growth {
   align-items: flex-start;
   padding: var(--spacing-300);
@@ -395,6 +475,13 @@ body {
     flex-direction: row;
     grid-column: span 2;
     justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1184px) {
+  .audience-growth {
+    flex-direction: column;
+    grid-area: audience;
   }
 }
 
@@ -415,6 +502,16 @@ body {
   }
 }
 
+@media screen and (min-width: 1184px) {
+  .create-post {
+    grid-area: create;
+  }
+
+  .create-post p {
+    width: 8ch;
+  }
+}
+
 .ai-content {
   align-items: flex-start;
   gap: var(--spacing-300);
@@ -427,9 +524,19 @@ body {
   }
 }
 
+@media screen and (min-width: 1184px) {
+  .ai-content {
+    grid-area: ai-content;
+  }
+
+  .ai-content p {
+    width: 8ch;
+  }
+}
+
 .attribution {
   font-size: 11px;
-  padding-block-end: var(--spacing-100);
+  padding-block: var(--spacing-200);
   text-align: center;
 }
 .attribution a {
