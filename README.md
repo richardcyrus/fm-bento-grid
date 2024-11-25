@@ -10,13 +10,9 @@ This is a solution to the [Bento grid challenge on Frontend Mentor](https://www.
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
-  - [My process](#my-process)
     - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -32,10 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- [Live Site URL](https://richardcyrus.com/fm-bento-grid)
-
-## My process
+- [Solution](https://www.frontendmentor.io/solutions/bento-grid-vbKT9u-krx)
+- [Live Site](https://richardcyrus.com/fm-bento-grid)
 
 ### Built with
 
@@ -45,17 +39,11 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
-
-### Continued development
-
 ### Useful resources
 
--[A (more) Modern CSS Reset](https://piccalil.li/blog/a-more-modern-css-reset/)
+- [A (more) Modern CSS Reset](https://piccalil.li/blog/a-more-modern-css-reset/)
 
 ## Author
 
 - Website - [Richard Cyrus](https://www.richardcyrus.com)
 - Frontend Mentor - [@richardcyrus](https://www.frontendmentor.io/profile/richardcyrus)
-
-## Acknowledgments
